@@ -1,0 +1,17 @@
+.baneer_img {
+	width: 100%;
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0)
+	);
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	margin-bottom: -30vh;
+	z-index: var(--xs-zIndex);
+}
+
+@media screen and (max-width: 1024px) {
+	.baneer_img {
+		margin-bottom: 0;
+	}
+} ;
