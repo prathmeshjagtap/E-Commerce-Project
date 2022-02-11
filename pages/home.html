@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="styleSheet" href="../style.css" />
+		<link rel="styleSheet" href="../layout/home.css" />
+
+		<title>Bookify</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<label class="toggles">
+				<i class="fas fa-bars"></i>
+			</label>
+			<a class="nav_logo" href="./home.html"
+				><img
+					class="nav__logo-image"
+					alt="website logo"
+					src="../assets/Bookify.png"
+			/></a>
+			<div class="nav__input">
+				<input class="input" placeholder="Search For items" type="te" />
+				<i class="fa fa-search search__icon"></i>
+			</div>
+
+			<div class="nav__links">
+				<div class="nav__login">
+					<p>Hello User</p>
+					<button class="nav__login-btn">Login</button>
+				</div>
+				<i class="fa fa-search search__icon-mobile"></i>
+				<div class="badge__container">
+					<i class="far fa-heart fa-2x"></i>
+					<div class="badge__count">0</div>
+				</div>
+				<div class="badge__container">
+					<i class="fas fa-shopping-cart fa-2x"></i>
+					<div class="badge__count">0</div>
+				</div>
+				<div class="nav__login__mobile">
+					<i class="far fa-user-circle fa-2x"></i>
+				</div>
+			</div>
+		</nav>
+		<main class="main">
+			<img class="baneer_img" src="../assets/banner.jpg" />
+			<div class="category__cards">
+				<div class="category__card">
+					<img
+						class="category__card__image"
+						src="../assets/new__release__book.jpg"
+					/>
+					<h3 class="card__title">New Releases</h3>
+				</div>
+				<div class="category__card">
+					<img
+						class="category__card__image"
+						src="../assets/Fiction_category.jpg"
+					/>
+					<h3 class="card__title">Fiction</h3>
+				</div>
+				<div class="category__card">
+					<img
+						class="category__card__image"
+						src="../assets/Biographies_category.jpg"
+					/>
+					<h3 class="card__title">Biograhies</h3>
+				</div>
+				<div class="category__card">
+					<img
+						class="category__card__image"
+						src="../assets/childeren__category.jpg"
+					/>
+					<h3 class="card__title">Childrens Books</h3>
+				</div>
+				<div class="category__card">
+					<img
+						class="category__card__image"
+						src="../assets/self__help_category.jpg"
+					/>
+					<h3 class="card__title">Self Help Books</h3>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

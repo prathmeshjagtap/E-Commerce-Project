@@ -1,0 +1,34 @@
+@import url(https://easyui-library.netlify.app/styles/component.css);
+@import url(./layout/header.css);
+@import url(./layout/cards.css);
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--xs-zIndex: -5;
+	--sm-zIndex: 5;
+	--m-zIndex: 10;
+	--lg-zIndex: 15;
+	--xlg-zIndex: 20;
+
+	--p2: 2px;
+	--p4: 4px;
+	--p8: 8px;
+	--m2: 2px;
+	--m4: 4px;
+	--m8: 4px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+i {
+	cursor: pointer;
+}
