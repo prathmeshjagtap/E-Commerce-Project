@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Products</title>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../layout/product.css" />
+	</head>
+
+	<body>
+		<nav class="nav">
+			<img />
+			<a class="nav_logo" href="./home.html"
+				><img
+					class="nav__logo-image"
+					alt="website logo"
+					src="../assets/Bookify.png"
+			/></a>
+			<div class="nav__input">
+				<input class="input" placeholder="Search For items" type="te" />
+				<i class="fa fa-search search__icon"></i>
+			</div>
+
+			<div class="nav__links">
+				<div class="nav__login">
+					<p>Hello User</p>
+					<button class="nav__login-btn">Login</button>
+				</div>
+				<div class="badge__container">
+					<i class="far fa-heart fa-2x"></i>
+					<div class="badge__count">0</div>
+				</div>
+				<div class="badge__container">
+					<i class="fas fa-shopping-cart fa-2x"></i>
+					<div class="badge__count">0</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<aside class="aside__left">
+				<div class="aside__filter">
+					<h1 class="filter__heading">Filter</h1>
+					<h3>Clear</h3>
+				</div>
+				<h1 class="filter__heading">Price</h1>
+				<div>
+					<div class="price__range">
+						<p>50</p>
+						<p>250</p>
+						<p>500</p>
+					</div>
+					<input type="range" min="50" max="500" />
+				</div>
+
+				<h1 class="filter__heading">Category</h1>
+				<ul class="aside__list">
+					<li>
+						<input type="checkbox" id="newrelease" />
+						<label for="newrelease">New Releases</label>
+					</li>
+					<li>
+						<input type="checkbox" id="fiction" />
+						<label for="fiction">Fiction</label>
+					</li>
+					<li>
+						<input type="checkbox" id="Biograhies" />
+						<label for="Biograhies">Biographies</label>
+					</li>
+					<li>
+						<input type="checkbox" id="childrens" />
+						<label for="childrens">Children Books</label>
+					</li>
+					<li>
+						<input type="checkbox" id="selfhelp" />
+						<label for="selfhelp">Self Help Books</label>
+					</li>
+				</ul>
+				<ul class="aside__list">
+					<h1 class="filter__heading">Rating</h1>
+					<li>
+						<input type="radio" id="4star" name="ratings" />
+						<label for="4star">4 Stars & above</label>
+					</li>
+					<li>
+						<input type="radio" id="3star" name="ratings" />
+						<label for="3star">3 Stars & above</label>
+					</li>
+					<li>
+						<input type="radio" id="2star" name="ratings" />
+						<label for="2star">2 Stars & above</label>
+					</li>
+					<li>
+						<input type="radio" id="1star" name="ratings" />
+						<label for="1star">1 Stars & above</label>
+					</li>
+				</ul>
+				<ul class="aside__list">
+					<h1 class="filter__heading">Sort By</h1>
+					<li>
+						<input type="radio" id="lowtoHigh" name="sortby" />
+						<label for="lowtoHigh">Price- Low to High</label>
+					</li>
+					<li>
+						<input type="radio" id="hightoLow" name="sortby" />
+						<label for="hightoLow">Price- High to Low</label>
+					</li>
+				</ul>
+			</aside>
+			<main class="main">
+				<h1 class="Product__categoery__name">Showing All Products</h1>
+				<div class="products">
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/Biography.jpg" />
+						<div class="card__titles">
+							<h2>Steve Jobs</h2>
+							<p>by Walter Isaacson</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/childrens.jpg" />
+						<div class="card__titles">
+							<h2>GrandParents</h2>
+							<p>by Sudha Murty</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/fiction.jpg" />
+						<div class="card__titles">
+							<h2>Dune</h2>
+							<p>by Frank Herbert</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/newrelease.jpg" />
+						<div class="card__titles">
+							<h2>Do Epic Shit</h2>
+							<p>by Ankur Wariko</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/Biography.jpg" />
+						<div class="card__titles">
+							<h2>Steve Jobs</h2>
+							<p>by Walter Isaacson</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/childrens.jpg" />
+						<div class="card__titles">
+							<h2>GrandParents</h2>
+							<p>by Sudha Murty</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/fiction.jpg" />
+						<div class="card__titles">
+							<h2>Dune</h2>
+							<p>by Frank Herbert</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/newrelease.jpg" />
+						<div class="card__titles">
+							<h2>Do Epic Shit</h2>
+							<p>by Ankur Wariko</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/Biography.jpg" />
+						<div class="card__titles">
+							<h2>Steve Jobs</h2>
+							<p>by Walter Isaacson</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/childrens.jpg" />
+						<div class="card__titles">
+							<h2>GrandParents</h2>
+							<p>by Sudha Murty</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/fiction.jpg" />
+						<div class="card__titles">
+							<h2>Dune</h2>
+							<p>by Frank Herbert</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/newrelease.jpg" />
+						<div class="card__titles">
+							<h2>Do Epic Shit</h2>
+							<p>by Ankur Wariko</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/Biography.jpg" />
+						<div class="card__titles">
+							<h2>Steve Jobs</h2>
+							<p>by Walter Isaacson</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/childrens.jpg" />
+						<div class="card__titles">
+							<h2>GrandParents</h2>
+							<p>by Sudha Murty</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+					<div class="card__ecommerce">
+						<div class="card__badge">
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+						<img class="card__image" src="../assets/Biography.jpg" />
+						<div class="card__titles">
+							<h2>Steve Jobs</h2>
+							<p>by Walter Isaacson</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<button class="card__button-ecom">Add to cart</button>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
