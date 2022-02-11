@@ -63,9 +63,14 @@
 	padding: 2px 8px;
 	font-size: 1.2rem;
 	border-radius: var(--p4);
-	border: 1px solid var(--primary-color);
+	border: 1px solid var(--secondary-color);
 	color: var(--secondary-color);
 	background-color: var(--background-color);
+	cursor: pointer;
+}
+.nav__login-btn:hover {
+	background-color: var(--secondary-color);
+	color: var(--background-color);
 }
 
 @media screen and (max-width: 480px) {
