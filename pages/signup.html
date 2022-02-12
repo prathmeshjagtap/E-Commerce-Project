@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../layout/signup.css" />
+		<title>SignUp</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<label class="toggles">
+				<i class="fas fa-bars"></i>
+			</label>
+			<a class="nav_logo" href="./home.html"
+				><img
+					class="nav__logo-image"
+					alt="website logo"
+					src="../assets/Bookify.png"
+			/></a>
+			<div class="nav__input">
+				<input class="input" placeholder="Search For items" type="te" />
+				<i class="fa fa-search search__icon"></i>
+			</div>
+
+			<div class="nav__links">
+				<div class="nav__login">
+					<p>Hello User</p>
+					<button class="nav__login-btn">Login</button>
+				</div>
+				<i class="fa fa-search search__icon-mobile"></i>
+				<div class="badge__container">
+					<i class="far fa-heart fa-2x"></i>
+					<div class="badge__count">0</div>
+				</div>
+				<div class="badge__container">
+					<i class="fas fa-shopping-cart fa-2x"></i>
+					<div class="badge__count">0</div>
+				</div>
+				<div class="nav__login__mobile">
+					<i class="far fa-user-circle fa-2x"></i>
+				</div>
+			</div>
+		</nav>
+		<main class="signup__container">
+			<div class="signup__div">
+				<form action="./home.html" class="form">
+					<h2 class="form__name">Signup</h2>
+					<div class="input__box">
+						<label for="Email">Email address </label>
+						<input id="Email" class="input" required />
+						<p class="input__message">Wrong Email</p>
+					</div>
+					<div class="input__box">
+						<label for="Username">Username </label>
+						<input id="Username" class="input" required />
+					</div>
+					<div class="input__box">
+						<label for="Password">Password</label>
+						<input id="Password" class="input" required />
+						<p class="input__message">Wrong Password</p>
+					</div>
+					<div class="input__box">
+						<label for="ConfirmPassword">Confirm Password </label>
+						<input id="ConfirmPassword" class="input" required />
+						<p class="input__message">Password does not match</p>
+					</div>
+					<div class="input__box input__TandC">
+						<input type="checkbox" />
+						<label>I accept all Terms and Conditions</label>
+					</div>
+					<button type="submit" class="btn btn-primary">
+						Create New Account
+					</button>
+					<button class="btn-secondary">Already have an Account ></button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

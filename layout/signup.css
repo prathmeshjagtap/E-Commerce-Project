@@ -1,0 +1,50 @@
+.signup__container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form {
+	width: 40ch;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-size: 1rem;
+}
+.form__name {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.input__message {
+	display: none;
+}
+.input__box {
+	margin: var(--margin);
+}
+.input {
+	width: 100%;
+	border: 2px solid var(--border-color);
+}
+.input__TandC {
+	flex-direction: row;
+	align-items: center;
+	font-size: 1rem;
+}
+input[type="checkbox"] {
+	cursor: pointer;
+}
+.btn {
+	padding: calc(4 * var(--padding));
+	width: 100%;
+}
+.btn-secondary {
+	background-color: var(--background-color);
+	border: none;
+	margin-top: calc(2 * var(--margin));
+	cursor: pointer;
+}
