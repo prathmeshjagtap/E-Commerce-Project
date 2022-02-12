@@ -1,0 +1,20 @@
+.wishlist__container {
+	padding: 3rem;
+}
+.wishlist__name {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.wishlist {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 14rem);
+	gap: 1rem;
+	justify-content: center;
+}
+.card__dismiss {
+	color: var(--text-color);
+}
+.card__button-ecom:hover {
+	background-color: var(--secondary-color);
+}
