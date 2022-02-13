@@ -14,7 +14,6 @@
 	align-items: center;
 	background-color: var(--background-color);
 	color: var(--text-color);
-	font-size: 1rem;
 }
 .form__name {
 	text-align: center;
@@ -25,6 +24,10 @@
 }
 .input__box {
 	margin: var(--margin);
+	margin: calc(4 * var(--margin));
+}
+.input__box label {
+	font-size: 1rem;
 }
 .input {
 	width: 100%;
@@ -34,6 +37,8 @@
 	flex-direction: row;
 	align-items: center;
 	font-size: 1rem;
+	margin-top: calc(4 * var(--margin));
+	justify-content: space-between;
 }
 input[type="checkbox"] {
 	cursor: pointer;
