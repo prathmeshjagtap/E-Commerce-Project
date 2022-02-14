@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="styleSheet" href="../style.css" />
+		<link rel="styleSheet" href="../layout/cart.css" />
+
+		<title>Cart</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<label class="toggles">
+				<i class="fas fa-bars"></i>
+			</label>
+			<a class="nav_logo" href="./home.html"
+				><img
+					class="nav__logo-image"
+					alt="website logo"
+					src="../assets/Bookify.png"
+			/></a>
+			<div class="nav__input">
+				<input class="input" placeholder="Search For items" type="te" />
+				<i class="fa fa-search search__icon"></i>
+			</div>
+
+			<div class="nav__links">
+				<div class="nav__login">
+					<p>Hello User</p>
+					<button class="nav__login-btn">Login</button>
+				</div>
+				<i class="fa fa-search search__icon-mobile"></i>
+				<div class="badge__container">
+					<i class="far fa-heart fa-2x"></i>
+					<div class="badge__count">0</div>
+				</div>
+				<div class="badge__container">
+					<i class="fas fa-shopping-cart fa-2x"></i>
+					<div class="badge__count">0</div>
+				</div>
+				<div class="nav__login__mobile">
+					<i class="far fa-user-circle fa-2x"></i>
+				</div>
+			</div>
+		</nav>
+		<main class="cart__conatainer">
+			<div class="cart__items">
+				<div class="card__horizontal">
+					<img class="card__image" src="../../assets/Biography.jpg" />
+					<div class="card__horizonatal__info">
+						<div class="card__titles__horizontal">
+							<h2>Steve Jobs</h2>
+							<p>by Walter Isaacson</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<div class="quantity">
+							<button class="quantity__minus">-</button>
+							<input type="number" class="quantity__input" value="1" />
+							<button class="quantity__plus">+</button>
+						</div>
+						<button class="btn btn-primary btn__horizontal">Add to cart</button>
+						<button class="btn btn-outline-dark btn__horizontal">
+							Move to wishlist
+						</button>
+					</div>
+				</div>
+				<div class="card__horizontal">
+					<img class="card__image" src="../assets/fiction.jpg" />
+					<div class="card__horizonatal__info">
+						<div class="card__titles__horizontal">
+							<h2>Dune</h2>
+							<p>by Frank Herbert</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<div class="quantity">
+							<button class="quantity__minus">-</button>
+							<input type="number" class="quantity__input" value="1" />
+							<button class="quantity__plus">+</button>
+						</div>
+						<button class="btn btn-primary btn__horizontal">Add to cart</button>
+						<button class="btn btn-outline-dark btn__horizontal">
+							Move to wishlist
+						</button>
+					</div>
+				</div>
+				<div class="card__horizontal">
+					<img class="card__image" src="../assets/newrelease.jpg" />
+					<div class="card__horizonatal__info">
+						<div class="card__titles__horizontal">
+							<h2>Do Epic Shit</h2>
+							<p>by Ankur Wariko</p>
+						</div>
+						<div class="card__price">
+							<div class="current__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>360</span>
+							</div>
+							<div class="previous__price">
+								<i class="fas fa-rupee-sign fa-1x"></i>
+								<span>400</span>
+							</div>
+						</div>
+						<div class="quantity">
+							<button class="quantity__minus">-</button>
+							<input type="number" class="quantity__input" value="1" />
+							<button class="quantity__plus">+</button>
+						</div>
+						<button class="btn btn-primary btn__horizontal">Add to cart</button>
+						<button class="btn btn-outline-dark btn__horizontal">
+							Move to wishlist
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="cart__bill">
+				<h2>Price Details</h2>
+				<ul class="price__details">
+					<li>
+						<p>Price(2 items)</p>
+						<p><i class="fas fa-rupee-sign fa-1x"></i>4999</p>
+					</li>
+					<li>
+						<p>Discount</p>
+						<p>-<i class="fas fa-rupee-sign fa-1x"></i>1999</p>
+					</li>
+					<li>
+						<p>Delivery Charges</p>
+						<p><i class="fas fa-rupee-sign fa-1x"></i>499</p>
+					</li>
+					<li>
+						<p>Total Amount</p>
+						<p><i class="fas fa-rupee-sign fa-1x"></i>3499</p>
+					</li>
+				</ul>
+				<p class="bill__save">
+					You will save <i class="fas fa-rupee-sign fa-1x"></i>1999 on this
+					order
+				</p>
+				<button class="btn btn-primary">Place Order</button>
+			</div>
+		</main>
+	</body>
+</html>

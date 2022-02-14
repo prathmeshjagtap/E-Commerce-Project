@@ -1,0 +1,74 @@
+.cart__conatainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	gap: 2rem;
+}
+.cart__items {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+/* Bill Card */
+.cart__bill {
+	padding: 1rem 2rem;
+	border: 1px solid var(--boder-color);
+	box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+	border-radius: 5px;
+	align-self: flex-start;
+	position: sticky;
+	top: 10rem;
+}
+.cart__bill h2 {
+	text-align: center;
+	margin: 1rem;
+	border-bottom: var(--margin) solid var(--border-color);
+}
+.price__details {
+	text-align: center;
+}
+.price__details li {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem;
+}
+.price__details li:last-child {
+	border-top: var(--margin) solid var(--border-color);
+	border-bottom: var(--margin) solid var(--border-color);
+	padding: 8px 0;
+	font-weight: 900;
+}
+.cart__bill > p {
+	padding: 0 1rem;
+}
+.btn {
+	width: 100%;
+}
+
+/* Quantiy of items */
+.quantity {
+	display: flex;
+	gap: calc(4 * var(--padding));
+	margin: calc(4 * var(--margin)) 0;
+}
+.quantity__minus,
+.quantity__plus {
+	outline: 2px solid transparent;
+	outline-offset: 2px;
+	border: 1px solid var(--border-color);
+	background-color: var(--background-color);
+	border-radius: calc(2 * var(--margin));
+	font-size: 1rem;
+	padding: calc(3 * var(--padding));
+}
+.quantity__input {
+	width: 7ch;
+	text-align: center;
+	border-radius: 4px;
+	outline: var(--margin) solid transparent;
+	outline-offset: var(--margin);
+	border: 1px solid var(--border-color);
+}
