@@ -72,3 +72,9 @@
 	outline-offset: var(--margin);
 	border: 1px solid var(--border-color);
 }
+
+@media screen and (max-width: 780px) {
+	.cart__conatainer {
+		flex-direction: column;
+	}
+}
