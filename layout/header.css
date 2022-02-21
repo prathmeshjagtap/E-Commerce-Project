@@ -54,6 +54,10 @@
 	align-items: center;
 	gap: 2rem;
 }
+.nav__links a {
+	color: var(--background-color);
+}
+
 .nav__login {
 	display: flex;
 	flex-direction: column;
