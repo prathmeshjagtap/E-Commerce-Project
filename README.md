@@ -10,12 +10,6 @@ https://bookify-e.netlify.app/pages/home.html
 
 ---
 
-### Home Page
-
-https://bookify-e.netlify.app/pages/home.html
-
----
-
 ### Product Page
 
 https://bookify-e.netlify.app/pages/products.html
